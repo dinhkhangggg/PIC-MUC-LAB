@@ -1,15 +1,26 @@
-# 1. Bỏ qua toàn bộ tất cả các file và thư mục
-*
+# Loại bỏ các thư mục rác không cần thiết
+TTVXL/
+Thuc Hanh - Copy/
+__history/
+Project Backups/
+test/
 
-# 2. Chỉ cho phép theo dõi các file code trong thư mục gốc
-!*.c
-!*.h
-!README.md
-!.gitignore
+# Loại bỏ các file do trình biên dịch CCS C sinh ra
+*.hex
+*.cof
+*.lst
+*.err
+*.esym
+*.sym
+*.tre
+*.xsym
+*.ccspjt
+*.STA
 
-# 3. Đảm bảo chắc chắn chặn các thư mục rác (kể cả khi lỡ gõ sai lệnh git)
-/TTVXL/
-/Thuc Hanh - Copy/
-/__history/
-/Project Backups/
-/test/
+# Loại bỏ các file cấu hình và mô phỏng của Proteus
+*.pdsprj
+*.workspace
+
+# Loại bỏ các file nhị phân và tài liệu không liên quan
+*.msi
+*.pdf
